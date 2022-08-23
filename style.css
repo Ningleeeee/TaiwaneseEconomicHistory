@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+
+header{
+    background-color: #E5E5E5;
+    padding: 2rem 1rem;
+}
+nav{
+    background-color: #7c6c6c;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 0.5rem 0.3rem;
+    list-style-type: none;
+    padding-left: 1rem;    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(212, 211, 211);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: white;
+}
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.mainContext,.TaiwanMap{
+    padding: 2rem 2rem;
+}
+section.mainContext{
+    flex: 4 1 400px;
+}
+main p{
+    text-indent: 2rem;
+    padding-bottom: 1rem;
+}
+section.TaiwanMap{
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 250px;
+}
+.TaiwanMap h4{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.active{
+    color: white;
+}
+.agricultureRule{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+   
+}
+.agricultureRule p{
+    padding: 1rem;
+}
+.agricultureRule ol li{
+    margin-left: 2rem;
+}
+.highLight{
+    color: red;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-weight: bold;
+}
+#curve_chart{
+    width:100%;
+    height: 80%;
+}
+@media screen and (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+    }
+}
